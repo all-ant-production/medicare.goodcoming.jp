@@ -47,6 +47,8 @@ $slug = $post->post_name;
           'medical' => '医療保険',
           'cancer' => 'がん保険',
           'medical_for_chronic' => '持病がある方向け医療保険',
+          'term' => '定期保険',
+          'three-major' => '三大疾病保険',
       );
 
       foreach ($categories as $slug => $category_name) {
@@ -90,7 +92,6 @@ $slug = $post->post_name;
         このページでは､保険商品の商品の概要をご案内しています｡保険商品の詳細につきましては、<br>
         ｢商品パンフレット｣、「重要事項説明書(契約概要･注意喚起情報)」、及び｢ご契約のしおり･約款｣を必ずご覧ください｡
       </p>
-      <p class="number-text">募資S-2404-175-99</p>
     </div>
 
     <div class="contact-area">

@@ -142,6 +142,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#medical">医療保険<i class="fas fa-caret-down"></i></a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#cancer">がん保険<i class="fas fa-caret-down"></i></a></li>
         <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#medical_for_chronic">持病がある型向け保険<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#term">定期保険<i class="fas fa-caret-down"></i></a></li>
+        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#three-major">三大疾病保険<i class="fas fa-caret-down"></i></a></li>
       </ul>
     </nav>
 
