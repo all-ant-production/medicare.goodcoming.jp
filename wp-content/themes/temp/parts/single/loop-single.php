@@ -10,7 +10,7 @@ $post_id = 'category_'.$cat_id;
 <main>
   <div id="single-details">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <?php $linkUrl = home_url()."/re".post_custom('リファラー_ID')."?".$_SESSION["link_param"].date_i18n("Hi");?>
+    <?php $linkUrl = home_url()."/re".post_custom('リファラー_ID')."?".$_SESSION["link_param"];?>
     <div class="single-inner">
       <h3 class="title"><?php the_title(); ?></h3>
       <div class="item-inner">

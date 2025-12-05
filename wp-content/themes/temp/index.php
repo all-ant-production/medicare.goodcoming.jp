@@ -47,8 +47,8 @@ $slug = $post->post_name;
           'medical' => '医療保険',
           'cancer' => 'がん保険',
           'medical_for_chronic' => '持病がある方向け医療保険',
-          'term' => '定期保険',
-          'three-major' => '三大疾病保険',
+          //'term' => '定期保険',
+          //'three-major' => '三大疾病保険',
       );
 
       foreach ($categories as $slug => $category_name) {
@@ -68,7 +68,7 @@ $slug = $post->post_name;
           <div class="item-wrap">
               <?php while ($query->have_posts()) :
                   $query->the_post();
-                  $linkUrl = home_url()."/re".post_custom('リファラー_ID')."?".$_SESSION["link_param"]."&".date_i18n("Hi");
+                  $linkUrl = home_url()."/re".post_custom('リファラー_ID')."?".$_SESSION["link_param"];
               ?>
                   <div class="item">
                     <h3><?php the_title(); ?></h3>
