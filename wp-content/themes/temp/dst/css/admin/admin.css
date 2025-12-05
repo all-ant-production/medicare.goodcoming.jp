@@ -112,7 +112,7 @@
 }
 
 #wpfooter.posstc {
-	position: static
+	position: relative
 }
 
 #wpfooter p#footer-left {

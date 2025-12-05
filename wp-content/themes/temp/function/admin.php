@@ -48,7 +48,7 @@ function mytheme_kill_admin_bar(){
 // show_admin_barにフィルターする。最後に処理してもらいたいので、1,000番目に登録。
 add_filter( 'show_admin_bar', 'mytheme_kill_admin_bar' , 1000 );
 
-	
+
 /**
 * 管理バー表示スペースの確保のためのコールバックを削除（カスタマイズするため）
 * @return boolean
@@ -99,29 +99,17 @@ function custom_admin_footer() {
 	$protocol = empty($_SERVER["HTTPS"]) ? 'http://' : 'https://';
 	// ホスト
 	$host = $_SERVER['HTTP_HOST'];
-	// manualのURLを入力
-	$manualURL = '';
 	// プロジェクトシートのURL
 	$pjURL = '';
-	// アカウント一覧のURL
-	$accountURL = '';
 
 	echo '
 		<div class="ggmanual">
-			<strong>マニュアル</strong>
-			<a href="'.$manualURL.'" target="_blank"><span>＞</span>使い方 PDF</a>
-		</div>
-		<div class="ggmanual">
 			<strong>プロジェクトシート</strong>
-			<a href="'.$manualURL.'" target="_blank"><span>＞</span>プロジェクトシート</a>
-		</div>
-		<div class="ggmanual">
-			<strong>アカウント一覧（認証が必要）</strong>
-			<a href="'.$accountURL.'" target="_blank"><span>＞</span>アカウント一覧</a>
+			<a href="'.$pjURL.'" target="_blank"><span>＞</span>プロジェクトシート</a>
 		</div>
 	';
 }
-add_filter('admin_footer_text', 'custom_admin_footer');
+//add_filter('admin_footer_text', 'custom_admin_footer');
 
 
 /* メニューの非表示****************************************************/
@@ -134,7 +122,7 @@ add_action( 'wp_terms_checklist_args', 'wp_category_terms_checklist_no_top' );
 
 
 
-/******************************************************************** 
+/********************************************************************
 * 元々のテーマ内記載物
 *********************************************************************/
 
@@ -200,7 +188,7 @@ function baw_theme_setup() {
 /****各追加生成用の設定
 ************************************/
 /*
-	if ( function_exists( 'add_image_size' ) ) { 
+	if ( function_exists( 'add_image_size' ) ) {
 		add_image_size('single_image', 1200, 600);
 		add_image_size('mainVImg', 1980, 9999);
 		add_image_size('profileImg', 1000, 9999);
@@ -221,7 +209,7 @@ function baw_theme_setup() {
 /****画像を相対パスに変更して記述料を削減
 ************************************/
 /*
-	function delete_domain_from_attachment_url( $url ) { 
+	function delete_domain_from_attachment_url( $url ) {
 		if ( preg_match( '/^http(s)?:\/\/[^\/\s]+(.*)$/', $url, $match ) ) {
 			$url = $match[2];
 		}
@@ -292,7 +280,7 @@ function baw_theme_setup() {
 /********************************************************************
  *
  * 投稿画面関連（不用なら削除で）
- *  
+ *
 ********************************************************************/
 
 /********************************************************************
@@ -356,7 +344,7 @@ add_action('admin_print_footer_scripts', 'my_print_footer_scripts', 21);
 /********************************************************************
  *
  * 管理画面の投稿一覧画面関連（不用なら削除で）
- *  
+ *
 ********************************************************************/
 
 
