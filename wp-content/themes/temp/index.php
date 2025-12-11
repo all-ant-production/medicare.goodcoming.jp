@@ -47,8 +47,8 @@ $slug = $post->post_name;
           'medical' => '医療保険',
           'cancer' => 'がん保険',
           'medical_for_chronic' => '持病がある方向け医療保険',
-          //'term' => '定期保険',
-          //'three-major' => '三大疾病保険',
+          'term' => '定期保険',
+          'three-major' => '三大疾病保険',
       );
 
       foreach ($categories as $slug => $category_name) {
